@@ -1,0 +1,57 @@
+name:
+  Deploy backend to AWS
+
+on:
+  push:
+    branches:
+      - main 
+    paths:
+      - 'backend/**'
+      - '.github/workflows/backend.deploy.yml'
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up SAM CLI
+        uses: aws-actions/setup-sam@v1
+
+      - name: Set up Python 3.9.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9.10"
+
+      - name: Install dependencies
+        working-directory: ./backend/
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: us-east-1
+
+      - name: Validate SAM template
+        working-directory: ./backend/
+        run: sam validate -t template.yaml
+ 
+      - name: Build
+        working-directory: ./backend/
+        run: sam build --use-container
+      
+      - name: Unit test
+        working-directory: ./backend/
+        run: pytest tests/test_handler.py
+
+      - name: Deploy
+        working-directory: ./backend/
+        run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name cloudresume-backend --s3-bucket update-visitor-count-sam --capabilities CAPABILITY_IAM --region us-east-1

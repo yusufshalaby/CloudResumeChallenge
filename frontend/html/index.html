@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <title>Yusuf Shalaby Resume</title>
+
+<body onload="myFunction()">
+  <script>
+    function myFunction() {
+      let span = document.querySelectorAll('p span').item(0);
+      fetch("https://cp7rfgm2x1.execute-api.us-east-1.amazonaws.com/Prod/update/"
+        ).then(response => {
+          return response.json();
+        }).then(data => {
+          span.innerHTML = data.visitors;
+        });
+    }
+  </script>
+
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+    <div class="row" style="margin-left: 5px;">
+      <div class="col-auto">
+        <p>You are visitor #<span></span></p>
+    </div>
+    </div>
+        <div class="sidebar-header">
+            <h3 class="text-center">Contents</h3>
+        </div>
+        <ul class="list-unstyled components">
+          <li><a href=#profile>Profile</a></li>
+          <li><a href=#experience>Experience</a></li>
+          <li><a href=#projects>Projects / Education / Certs</a></li>
+        </ul>
+      </br>
+        <div class="sidebar-header">
+          <h3 class="text-center">Techologies</h3>
+      </div>
+        <div class="row" style="margin-left: 5px;">
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">Python</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">Go</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">SQL</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">Linux</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">Docker</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">Dash</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">Plotly</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">AWS</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">Apache Spark / Flink</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C; font-size: 100%">InfluxDB</p>
+          </div>
+        </div>  
+      </div>
+
+    </nav>
+  </div>
+
+  <div id="content">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-4">Yusuf Shalaby</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="text-muted">Data Science | Cloud Architecture</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-sm">
+        <p style="margin-bottom: 0rem;">‪647-236-7484‬</p>
+      </div>
+      <div class="col-sm">
+        <a href="mailto:yusufshalaby@gmail.com" class="text-reset"
+          style="margin-bottom: 0rem">yusufshalaby@gmail.com</a>
+      </div>
+      <div class="col-sm">
+        <a href="https://linkedin.com/in/yusufshalaby" class="text-reset" style="margin-bottom: 0rem"
+          target="_blank">linked.in/in/yusufshalaby</a>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      <h5 id="profile" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Profile</h5>
+      <p>I am self-driven, with a strong work ethic and an ability to learn new technologies quickly. 
+        My core competencies include cloud infrastructure, predictive & prescriptive modelling, and data visualization. 
+        I have a strong analytics background and a track record of publications and deployments.</p>
+      <br>
+       <h5 id="experience" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Experience</h5>
+        <div class="row">
+          <div class="col">
+            <p class="" style="margin-bottom: .5rem;">Data Engineer</p>
+          </div>
+          <div class="col">
+            <p class="" style="margin-bottom: .5rem">BAI Communications</p>
+          </div>
+          <div class="col">
+            <p class="" style="margin-bottom: .5rem">March 2021 - Present</p>
+          </div>
+        </div>
+        <ul>
+          <li>Built ETL pipelines in AWS to support a suite of analytics products for the TTC based on passenger Wi-Fi data.</li>
+          <li>Built batch processing pipeline in Glue and Apache Spark processing hundreds of thousands of transit rider journeys every day</li>
+          <li>Built parallel data streaming pipeline in Kinesis and Apache Flink allowing customers to query data in near real time. </li>
+          <li>Built system to automatically detect subway platform overcrowding based on time series wi-fi client count data.</li>
+          <li>Deployed custom web-based dashboards using Flask and Dash displaying detailed monitoring metrics for the TTC</li>
+          <li>Developed network monitoring solution which triggers alerts when the PRESTO network is out of service</li>
+        </ul>
+        <div class="row">
+          <div class="col">
+            <p class="" style="margin-bottom: .5rem;">Machine Learning Consultant (contract)</p>
+          </div>
+          <div class="col">
+            <p class="" style="margin-bottom: .5rem">Fundthrough</p>
+          </div>
+          <div class="col">
+            <p class="" style="margin-bottom: .5rem">May 2018 - August 2018</p>
+          </div>
+        </div>
+        <ul>
+          <li>Performed feature engineering and trained prediction models on back account transaction data to evaluate customer risk.</li>
+        </ul>
+        <div class="row">
+          <div class="col">
+            <p class="" style="margin-bottom: .5rem;">Data Analyst</p>
+          </div>
+          <div class="col">
+            <p class="" style="margin-bottom: .5rem">Cancer Care Ontario</p>
+          </div>
+          <div class="col">
+            <p class="" style="margin-bottom: .5rem">May 2016 - August 2017</p>
+          </div>
+        </div>
+        <ul>
+          <li>Built a statistical forecasting tool combining automated time-series forecasting with expert-customizable input. </li>
+          <li>Tool was implemented by the provincial cancer drug budgeting team, resulting in a $5M reduction compared to the previous approach.</li>
+          <li>Published <a href=https://link.springer.com/article/10.1007/s40258-019-00533-z target="_blank">paper</a> in <i>Applied Health Economics and Policy Journal</i> and presented tool at <i>ARCC 2016</i> conference</li>
+        </ul>
+
+        <br>
+
+    <h5 id="projects" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Projects</h5>
+    <div class="row">
+      <div class="col">
+        <p class="" style="margin-bottom: .5rem;">NHL Expansion Draft Optimizer</p>
+      </div>
+      <div class="col">
+        <a class="" style="margin-bottom: .5rem" href=https://www.nhlexpansiondraft.com target="_blank">nhlexpansiondraft.com</a>
+      </div>
+      <div class="col">
+        <p class="" style="margin-bottom: .5rem"></p>
+      </div>
+    </div>
+    <ul>
+      <li>Coauthored a <a href=https://www.degruyter.com/document/doi/10.1515/jqas-2018-0024/html target="_blank">paper</a> about optimizing player selections in professional sports league expansion drafts.</li>
+      <li>Worked on backend and deployment of website for the 2021 NHL Expansion draft.</li>
+      <li>Received coverage from the <a href=https://www.thestar.com/sports/hockey/2017/06/13/u-of-t-engineers-an-expansion-roster-for-vegas-with-the-click-of-a-button.html?rf target="_blank">Toronto Star</a>
+          and the <a href=https://www.seattletimes.com/sports/kraken/this-interactive-tool-allows-you-to-build-your-own-kraken-roster-ahead-of-wednesdays-expansion-draft/ target="_blank">Seattle Times</a>.</li>
+    </ul>
+
+    <br>
+
+    <h5 id="education" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Education</h5>
+    <div class="row">
+      <div class="col">
+        <p class="" style="margin-bottom: .5rem;">MASc. Industrial Engineering</p>
+      </div>
+      <div class="col">
+        <p class="" style="margin-bottom: .5rem">University of Toronto</p>
+      </div>
+      <div class="col">
+        <p class="" style="margin-bottom: .5rem">2018 -
+          2020</p>
+      </div> 
+    </div>
+    <ul>
+      <li>A/A+ in all courses.</li>
+      <li>NSERC Canada Graduate Scholarship recipient</li>
+      <li>Published <a href=https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2021.4100 target="_blank">paper</a> in <i>Management Science</i> journal
+         and presented work at <i>INFORMS 2019</i> conference.</li>
+      <li>Finalist for <a href=https://www.informs.org/Recognizing-Excellence/Community-Prizes/Health-Applications-Society/Pierskalla-Best-Paper-Award target="_blank">Pierskalla Best Paper Award</a></li>
+      <li>Taught data analytics in Python to 3rd and 4th year undergrads.</li>
+    </ul>
+    <div class="row">
+      <div class="col">
+        <p class="" style="margin-bottom: .5rem;">BASc. Industrial Engineering</p>
+      </div>
+      <div class="col">
+        <p class="" style="margin-bottom: .5rem">University of Toronto</p>
+      </div>
+      <div class="col">
+        <p class="" style="margin-bottom: .5rem">2013 -
+          2018</p>
+      </div> 
+    </div>
+    <ul>
+      <li>Dean's list every semester</li>
+      <li>Captain of the Varsity Squash team</li>
+    </ul>
+    <br>
+        <h5 id="certifications" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Certifications</h5>
+        <ul class="list-unstyled">
+          <li>
+          <p class="text-primary" style="font-size:17px; margin-bottom: -.5rem">AWS Certified Solutions Architect - Associate</p>
+          <p><a class="text-primary text-muted" style="font-size:14px"
+              href="https://www.credly.com/badges/ecd64e05-d605-4d49-868c-2dc2478b2cc5/public_url"
+              target="_blank">J55CTB7DMFB41V9X</a></p>
+          </li>
+          <li>
+            <p class="text-primary" style="font-size:17px; margin-bottom: -.5rem">AWS Certified Cloud Practitioner</p>
+            <p><a class="text-primary text-muted" style="font-size:14px"
+                href="https://www.credly.com/badges/40bddd41-46cd-42af-917e-625778609186?source=linked_in_profile"
+                target="_blank">75JXKPJDCJVEQCSY</a></p>
+          </li>
+        </ul>
+      </div>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  </div> -->
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
