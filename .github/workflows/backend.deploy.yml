@@ -2,6 +2,7 @@ name:
   Deploy backend to AWS
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main 
