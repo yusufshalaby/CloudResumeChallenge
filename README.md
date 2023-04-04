@@ -1,3 +1,2 @@
 [![Deploy backend](https://github.com/yusufshalaby/CloudResumeChallenge/actions/workflows/backend.deploy.yml/badge.svg)](https://github.com/yusufshalaby/CloudResumeChallenge/actions/workflows/backend.deploy.yml)
-
 [![Deploy frontend](https://github.com/yusufshalaby/CloudResumeChallenge/actions/workflows/frontend.deploy.yml/badge.svg)](https://github.com/yusufshalaby/CloudResumeChallenge/actions/workflows/frontend.deploy.yml)
