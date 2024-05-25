@@ -14,12 +14,17 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
   <title>Yusuf Shalaby Resume</title>
 
 <body onload="myFunction()">
@@ -27,11 +32,11 @@
     function myFunction() {
       let span = document.querySelectorAll('p span').item(0);
       fetch("https://cp7rfgm2x1.execute-api.us-east-1.amazonaws.com/Prod/update/"
-        ).then(response => {
-          return response.json();
-        }).then(data => {
-          span.innerHTML = data.visitors;
-        });
+      ).then(response => {
+        return response.json();
+      }).then(data => {
+        span.innerHTML = data.visitors;
+      });
     }
   </script>
 
@@ -92,192 +97,225 @@
   </div> -->
 
   <div id="content">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <h1 class="display-4">Yusuf Shalaby</h1>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4">Yusuf Shalaby</h1>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <p class="text-muted">Data Engineer | Operations Research</p>
+      <div class="row">
+        <div class="col">
+          <p class="text-muted">Data Engineer | Operations Research</p>
+        </div>
       </div>
-    </div>
 
-    <br>
-
-    <div class="row">
-      <div class="col-sm">
-        <p style="margin-bottom: 0rem;">‪647-236-7484‬</p>
-      </div>
-      <div class="col-sm">
-        <a href="mailto:yusufshalaby@gmail.com" class="text-reset"
-          style="margin-bottom: 0rem">yusufshalaby@gmail.com</a>
-      </div>
-      <div class="col-sm">
-        <a href="https://linkedin.com/in/yusufshalaby" class="text-reset" style="margin-bottom: 0rem"
-          target="_blank">linked.in/in/yusufshalaby</a>
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <br>
-
-  <div class="container">
-    <div class="row">
-      <div class="col">
-      <h5 id="profile" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Profile</h5>
-      <p>A fervent technology enthusiast who is deeply passionate about the future of data engineering. I thrive on exploring and mastering new technologies, methodologies, and best practices. I excel in collaborative environments where ideas flow freely and diverse perspectives are valued all while striving for excellence in every aspect of my work.</p>
       <br>
-       <h5 id="experience" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Experience</h5>
-        <div class="row">
-          <div class="col">
-            <p class="" style="margin-bottom: .5rem;">Software Engineer - Data Engineering</p>
-          </div>
-          <div class="col">
-            <p class="" style="margin-bottom: .5rem">FundThrough</p>
-          </div>
-          <div class="col">
-            <p class="" style="text-align: right; margin-bottom: .5rem">August 2023 - May 2024</p>
-          </div>
-        </div>
-        <ul>
-          <li>Developed a unified and optimized Python library to streamline data extraction and transformation tasks across multiple internal applications, reducing redundancy and enhancing code performance. Implemented data validation mechanisms within the library to ensure data correctness and consistency.</li>
-          <li>Promoted best practices within Python projects such as adoption of type hints, unit testing against mock Kafka and Postgres environments, enforcement of linting and formatting pre-commits and setting up local Dockerized development environments. These initiatives standardized development processes, improved code quality, and enhanced collaboration among team members.</li>
-          <li>Introduced a SQL transformation framework called SQLMesh, enabling the automated scheduling of Redshift table builds in the correct order within Airflow. This innovation significantly reduced the risk of manual errors in scheduling, ensuring the seamless execution of data pipelines that are correct, performant and reliable.</li>
-          <li style="font-style: italic;">AWS, Python, Confluent Kafka, Redshift, Postgres, Airflow, SQLMesh, CircleCI </li>
-        </ul>
-        <div class="row">
-          <div class="col">
-            <p class="" style="margin-bottom: .5rem;">Data Engineer</p>
-          </div>
-          <div class="col">
-            <p class="" style="margin-bottom: .5rem">Rogers Transit Services</p>
-          </div>
-          <div class="col">
-            <p class="" style="text-align: right; margin-bottom: .5rem">March 2021 - July 2023</p>
-          </div>
-        </div>
-        <ul>
-          <li>Orchestrated complex pipelines using Dagster and dbt-core, transforming WiFi access point logs into valuable subway origin destination data. </li>
-          <li>Developed data warehouse with Amazon Athena, used by team of analysts to query TTC passenger movement patterns.</li>
-          <li>Managed Elasticsearch cluster enabling realtime monitoring of user behavior. </li>
-          <li>Developed log shipping and network monitoring tools using Go and Docker to enable real time alerting of network failures. </li>
-          <li style="font-style: italic;">AWS, Python, Go, Elasticsearch, Athena, Spark, Kinesis, Dagster, dbt-core, Github Actions </li>
-        </ul>
-        <div class="row">
-          <div class="col">
-            <p class="" style="margin-bottom: .5rem;">Data Analyst</p>
-          </div>
-          <div class="col">
-            <p class="" style="margin-bottom: .5rem">Cancer Care Ontario</p>
-          </div>
-          <div class="col">
-            <p class="" style="text-align: right; margin-bottom: .5rem">May 2016 - August 2017</p>
-          </div>
-        </div>
-        <ul>
-          <li>Built a statistical forecasting tool which was implemented by the Provincial Drug Reimbursement Program, resulting in a $5M reduction compared to the previous approach. Published <a href=https://link.springer.com/article/10.1007/s40258-019-00533-z target="_blank">paper</a> in <i>Applied Health Economics and Policy Journal</i> and presented tool at <i>ARCC 2016</i> conference</li>
-        </ul>
 
-        <br>
-
-    <h5 id="projects" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Projects</h5>
-    <div class="row">
-      <div class="col">
-        <p class="" style="margin-bottom: .5rem;">NHL Expansion Draft Optimizer</p>
-      </div>
-      <div class="col">
-        <a class="" style="margin-bottom: .5rem" href=https://www.nhlexpansiondraft.com target="_blank">nhlexpansiondraft.com</a>
-      </div>
-      <div class="col">
-        <p class="" style="margin-bottom: .5rem"></p>
+      <div class="row">
+        <div class="col-sm">
+          <p style="margin-bottom: 0rem;">‪647-236-7484‬</p>
+        </div>
+        <div class="col-sm">
+          <a href="mailto:yusufshalaby@gmail.com" class="text-reset"
+            style="margin-bottom: 0rem">yusufshalaby@gmail.com</a>
+        </div>
+        <div class="col-sm">
+          <a href="https://linkedin.com/in/yusufshalaby" class="text-reset" style="margin-bottom: 0rem"
+            target="_blank">linked.in/in/yusufshalaby</a>
+        </div>
       </div>
     </div>
-    <ul>
-      <li>Coauthored a <a href=https://www.degruyter.com/document/doi/10.1515/jqas-2018-0024/html target="_blank">paper</a> about optimizing player selections in professional sports league expansion drafts.</li>
-      <li>Worked on backend and serverless deployment using FastAPI, AWS Amplify and App Runner.</li>
-      <li>Received coverage from the <a href=https://www.thestar.com/sports/hockey/2017/06/13/u-of-t-engineers-an-expansion-roster-for-vegas-with-the-click-of-a-button.html?rf target="_blank">Toronto Star</a>
-          and the <a href=https://www.seattletimes.com/sports/kraken/this-interactive-tool-allows-you-to-build-your-own-kraken-roster-ahead-of-wednesdays-expansion-draft/ target="_blank">Seattle Times</a>.</li>
-    </ul>
 
     <br>
-
-    <h5 id="education" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Education</h5>
-    <div class="row">
-      <div class="col">
-        <p class="" style="margin-bottom: .5rem;">MASc. Industrial Engineering</p>
-      </div>
-      <div class="col">
-        <p class="" style="margin-bottom: .5rem">University of Toronto</p>
-      </div>
-      <div class="col">
-        <p class="" style="margin-bottom: .5rem">2018 -
-          2020</p>
-      </div> 
-    </div>
-    <ul>
-      <li>A/A+ in all courses.</li>
-      <li>NSERC Canada Graduate Scholarship recipient</li>
-      <li>Published <a href=https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2021.4100 target="_blank">paper</a> in <i>Management Science</i> journal which was a finalist for the <a href=https://www.informs.org/Recognizing-Excellence/Community-Prizes/Health-Applications-Society/Pierskalla-Best-Paper-Award target="_blank">Pierskalla Best Paper Award</a>.</li>
-      <li>Taught data analytics in Python to 3rd and 4th year undergrads.</li>
-    </ul>
-    <div class="row">
-      <div class="col">
-        <p class="" style="margin-bottom: .5rem;">BASc. Industrial Engineering</p>
-      </div>
-      <div class="col">
-        <p class="" style="margin-bottom: .5rem">University of Toronto</p>
-      </div>
-      <div class="col">
-        <p class="" style="margin-bottom: .5rem">2013 -
-          2018</p>
-      </div> 
-    </div>
-    <ul>
-      <li>Dean's list every semester</li>
-      <li>Captain of the Varsity Squash team</li>
-    </ul>
     <br>
-        <h5 id="certifications" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Certifications</h5>
-        <ul class="list-unstyled">
-          <li>
-          <p class="text-primary" style="font-size:17px; margin-bottom: -.5rem">AWS Certified Solutions Architect - Associate</p>
-          <p><a class="text-primary text-muted" style="font-size:14px"
-              href="https://www.credly.com/badges/ecd64e05-d605-4d49-868c-2dc2478b2cc5/public_url"
-              target="_blank">J55CTB7DMFB41V9X</a></p>
-          </li>
-          <!-- <li>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5 id="profile" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Profile</h5>
+          <p>A fervent technology enthusiast who is deeply passionate about the future of data engineering. I thrive on
+            exploring and mastering new technologies, methodologies, and best practices. I excel in collaborative
+            environments where ideas flow freely and diverse perspectives are valued all while striving for excellence
+            in every aspect of my work.</p>
+          <br>
+          <h5 id="experience" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Experience
+          </h5>
+          <div class="row">
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem;">Software Engineer - Data Engineering</p>
+            </div>
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem">FundThrough</p>
+            </div>
+            <div class="col">
+              <p class="" style="text-align: right; margin-bottom: .5rem">August 2023 - May 2024</p>
+            </div>
+          </div>
+          <ul>
+            <li>Developed a unified and optimized Python library to streamline data extraction and transformation tasks
+              across multiple internal applications, reducing redundancy and enhancing code performance. Implemented
+              data validation mechanisms within the library to ensure data correctness and consistency.</li>
+            <li>Promoted best practices within Python projects such as adoption of type hints, unit testing against mock
+              Kafka and Postgres environments, enforcement of linting and formatting pre-commits and setting up local
+              Dockerized development environments. These initiatives standardized development processes, improved code
+              quality, and enhanced collaboration among team members.</li>
+            <li>Introduced a SQL transformation framework (SQLMesh) enabling the automated scheduling of Redshift
+              table builds in the correct order within Airflow. This innovation significantly reduced the risk of manual
+              errors in scheduling, ensuring the seamless execution of data pipelines that are correct, performant and
+              reliable.</li>
+            <li style="font-style: italic;">AWS, Python, Confluent Kafka, Redshift, Postgres, Airflow, SQLMesh, CircleCI
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem;">Data Engineer</p>
+            </div>
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem">Rogers Transit Services</p>
+            </div>
+            <div class="col">
+              <p class="" style="text-align: right; margin-bottom: .5rem">March 2021 - July 2023</p>
+            </div>
+          </div>
+          <ul>
+            <li>Orchestrated complex pipelines using Dagster and dbt-core, transforming WiFi access point logs into
+              valuable subway origin destination data. </li>
+            <li>Developed data warehouse with Amazon Athena, used by team of analysts to query TTC passenger movement
+              patterns.</li>
+            <li>Managed Elasticsearch cluster enabling realtime monitoring of user behavior. </li>
+            <li>Developed log shipping and network monitoring tools using Go and Docker to enable real time alerting of
+              network failures. </li>
+            <li style="font-style: italic;">AWS, Python, Go, Elasticsearch, Athena, Spark, Kinesis, Dagster, dbt-core,
+              Github Actions </li>
+          </ul>
+          <div class="row">
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem;">Data Analyst</p>
+            </div>
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem">Cancer Care Ontario</p>
+            </div>
+            <div class="col">
+              <p class="" style="text-align: right; margin-bottom: .5rem">May 2016 - August 2017</p>
+            </div>
+          </div>
+          <ul>
+            <li>Built a statistical forecasting tool which was implemented by the Provincial Drug Reimbursement Program,
+              resulting in a $5M reduction compared to the previous approach. Published <a
+                href=https://link.springer.com/article/10.1007/s40258-019-00533-z target="_blank">paper</a> in
+              <i>Applied Health Economics and Policy Journal</i> and presented tool at <i>ARCC 2016</i> conference</li>
+          </ul>
+
+          <br>
+
+          <h5 id="projects" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Projects</h5>
+          <div class="row">
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem;">NHL Expansion Draft Optimizer</p>
+            </div>
+            <div class="col">
+              <a class="" style="margin-bottom: .5rem" href=https://www.nhlexpansiondraft.com
+                target="_blank">nhlexpansiondraft.com</a>
+            </div>
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem"></p>
+            </div>
+          </div>
+          <ul>
+            <li>Coauthored a <a href=https://www.degruyter.com/document/doi/10.1515/jqas-2018-0024/html
+                target="_blank">paper</a> about optimizing player selections in professional sports league expansion
+              drafts.</li>
+            <li>Worked on backend and serverless deployment using FastAPI, AWS Amplify and App Runner.</li>
+            <li>Received coverage from the <a
+                href=https://www.thestar.com/sports/hockey/2017/06/13/u-of-t-engineers-an-expansion-roster-for-vegas-with-the-click-of-a-button.html?rf
+                target="_blank">Toronto Star</a>
+              and the <a
+                href=https://www.seattletimes.com/sports/kraken/this-interactive-tool-allows-you-to-build-your-own-kraken-roster-ahead-of-wednesdays-expansion-draft/
+                target="_blank">Seattle Times</a>.</li>
+          </ul>
+
+          <br>
+
+          <h5 id="education" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Education</h5>
+          <div class="row">
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem;">MASc. Industrial Engineering</p>
+            </div>
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem">University of Toronto</p>
+            </div>
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem">2018 -
+                2020</p>
+            </div>
+          </div>
+          <ul>
+            <li>A/A+ in all courses.</li>
+            <li>NSERC Canada Graduate Scholarship recipient</li>
+            <li>Published <a href=https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2021.4100
+                target="_blank">paper</a> in <i>Management Science</i> journal which was a finalist for the <a
+                href=https://www.informs.org/Recognizing-Excellence/Community-Prizes/Health-Applications-Society/Pierskalla-Best-Paper-Award
+                target="_blank">Pierskalla Best Paper Award</a>.</li>
+            <li>Taught data analytics in Python to 3rd and 4th year undergrads.</li>
+          </ul>
+          <div class="row">
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem;">BASc. Industrial Engineering</p>
+            </div>
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem">University of Toronto</p>
+            </div>
+            <div class="col">
+              <p class="" style="margin-bottom: .5rem">2013 -
+                2018</p>
+            </div>
+          </div>
+          <ul>
+            <li>Dean's list every semester</li>
+            <li>Captain of the Varsity Squash team</li>
+          </ul>
+          <br>
+          <h5 id="certifications" class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">
+            Certifications</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p class="text-primary" style="font-size:17px; margin-bottom: -.5rem">AWS Certified Solutions Architect -
+                Associate</p>
+              <p><a class="text-primary text-muted" style="font-size:14px"
+                  href="https://www.credly.com/badges/ecd64e05-d605-4d49-868c-2dc2478b2cc5/public_url"
+                  target="_blank">J55CTB7DMFB41V9X</a></p>
+            </li>
+            <!-- <li>
             <p class="text-primary" style="font-size:17px; margin-bottom: -.5rem">AWS Certified Cloud Practitioner</p>
             <p><a class="text-primary text-muted" style="font-size:14px"
                 href="https://www.credly.com/badges/40bddd41-46cd-42af-917e-625778609186?source=linked_in_profile"
                 target="_blank">75JXKPJDCJVEQCSY</a></p>
           </li> -->
-        </ul>
-      </div>
+          </ul>
+        </div>
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   </div> -->
 
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
+        <script type="text/javascript">
+          $(document).ready(function () {
             $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
+              theme: "minimal"
             });
 
             $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+              $('#sidebar, #content').toggleClass('active');
+              $('.collapse.in').toggleClass('in');
+              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
-        });
-    </script>
+          });
+        </script>
 
 </body>
 
