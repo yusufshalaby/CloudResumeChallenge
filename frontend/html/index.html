@@ -152,22 +152,19 @@
             </div>
           </div>
           <ul>
-            <li>Developed a Python ETL library that was embedded within multiple internal services to support ML
-              feature engineering, batch data processing and event driven microservices. Optimized speed of data
-              transformations from minutes to seconds compared to legacy pipelines and implemented data validation
-              mechanisms within the library to ensure data correctness and consistency.</li>
-            <li>Upgraded company data-ops through the introduction of an open source data
-              transformation framework (SQLMesh) running on Airflow. Previously, table refreshes in Redshift were
-              scheduled in
-              a hard-coded order that was difficult to maintain, scale and debug. This innovation eliminated the risk of
-              manual errors in scheduling, unlocked visibility into column level lineage, simplified testing and
-              monitoring, and ensured the seamless execution of data pipelines that are correct,
-              performant and reliable.
-            </li>
-            <li>Promoted best practices within Python projects such as adoption of type hints, unit testing against mock
-              Kafka and Postgres environments, enforcement of linting and formatting pre-commits and setting up local
-              Dockerized development environments. These initiatives standardized development processes, improved code
-              quality and enhanced collaboration among team members.</li>
+            <li>Consolidated and standardized commonly used ETL patterns into a single Python library to support ML, analytics
+              and strategic initiatives, ensuring consistent and correct data across multiple services.</li>
+            <li>Took charge of data infrastructure improvements through the introduction of a new data
+              transformation framework, unlocking visibility into column level lineage, simplifying testing and monitoring
+              and ensuring the seamless execution of data pipelines in Airflow. </li>
+            <li>Created a CI process for new Airflow image builds and deployments.</li>
+            <li>Refactored microservices to use dependency injection, greatly simplifying unit testing, configuration,
+              and code extensibility.</li>
+            <li>Delivered the first pipeline that could provide detailed visibility into company underwriting process
+              using Kafka and Redshift.</li>
+            <li>Extracted customer financial statement metrics from JSON reports which were previously considered too
+              complex to parse effectively.</li>
+            <li>Served as a technical leader and mentor on my team</li>
             <li style="font-style: italic;">AWS, Python, SQL, Confluent Kafka, Redshift, Postgres, Airflow, SQLMesh,
               CircleCI
             </li>
